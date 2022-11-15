@@ -1,14 +1,6 @@
 
 * {
    background: #222;
-  /*background: radial-gradient(#333, #111);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  font: 100%/1.5 "Helvetica Neue";
-  overflow: hidden; */
-
 }
 
 .game-area {
@@ -18,11 +10,6 @@
   height: 700px;
   border: 2px solid #39FF14;
   box-shadow: 0px 0px 10px 5px #39FF14;
-  /* background-size: 10px 10px;
-  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
-  /* width: 600px;
-    height: 600px;
-    background: url('http://i.stack.imgur.com/GySvQ.png'); */
    background:  conic-gradient(from 90deg at 1px 1px,#0000 90deg,#545454 0) 
     0 0/14px 14px;
 }
@@ -56,24 +43,12 @@
   text-align: center;
 }
 
-home {
-  background: #222;
-}
-
-/* .snakeHome {
-  position: flex;
-  color: #39FF14;
-  font-size: 200px;
-  font-weight: bold;
-} */
-
 .snakeHome {
   font-size: 160px;
+  font-family: 'Noto Sans JP', sans-serif;
   color: #39FF14;
   text-align: center;
   border-radius: 2px solid white;
-  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate; */
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -91,19 +66,22 @@ home {
 }
 
 .homeButton {
-  /* color: whitesmoke; */
   font-weight: lighter;
   font-size: 50px;
   padding: 10px;
   border-radius: 25px;
+  border: 1px solid lightgrey;
   box-shadow: 0px 0px 20px 10px #39FF14;
 }
 
 .homeButton:hover {
   cursor: pointer;
-}
+  background-color: #39FF14;
+  }
+
 
 .gameOverText {
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 110px;
   color: #39FF14;
   text-align: center;
@@ -120,6 +98,99 @@ home {
   }
 }
 
+.yourScore {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #04FFF7;
+  font-size: 20px;
+  text-align: center;
+}
+
+.submitText {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #04FFF7;
+  font-size: 60px;
+  text-align: center;
+}
+
+input{
+  box-sizing: border-box;
+  text-align: center;
+  width: 25%;
+  border: 1px solid lightgrey;
+  font-size: 50px;
+  padding: 5px;
+  margin: 26px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 10px #ff4da6;
+  margin-left: 38%;
+}
+
+input:hover {
+  cursor: pointer;
+  background-color: #ff4da6;
+}
 
 
+.highScoreText {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 80px;
+  color: #39FF14;
+  text-align: center;
+  border-radius: 2px solid white;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px greenyellow, 0 0 30px greenyellow, 0 0 40px greenyellow, 0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow;
+  }
+  to {
+    text-shadow: 0 0 20px greenyellow, 0 0 30px yellow, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.scores {
+  background-color: black;
+  height: 400px;
+  width: 600px;
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.playAgainButton {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-weight: lighter;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+  margin-top: 300px;
+  box-shadow: 0px 0px 20px 10px greenyellow;
+}
+
+.playAgainButton:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.menuButton {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-weight: lighter;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 0px 20px 10px greenyellow;
+  margin-top: 300px;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
 
