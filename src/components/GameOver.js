@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 function GameOver() {
+
     return (
 
     <div>
@@ -9,24 +11,27 @@ function GameOver() {
         </div>
         <div>
         <form className="enterInitials" >
-            <h3>Enter your initials</h3>
+            <h3 className="yourScore" >your score -</h3>
+            <h3 className="submitText" >Enter your initials</h3>
             <br/>
             <input 
             type="text"
             name="initials"
             // value={initials}
-            placeholder="XXX"
+            placeholder="- - -"
             // onChange={(e) => setInitials(e.target.value)}
             />
-            <br/>
-            <input
-            type="submit"
-            name="submit"
-            value="Submit"
-            className="submit"
-            />
+            <Link to="/EndScreen">
+                <input 
+                type="submit"
+                name="submit"
+                value="Submit"
+                className="submit"
+                />
+                </Link>
             <br/>
         </form>
+        <div></div>
         </div>
     </div>
 
