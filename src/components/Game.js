@@ -126,8 +126,9 @@ class Game extends React.Component  {
   }
 
   onGameOver() {
-    alert(`Game Over. Snake length is ${this.state.snakeDots.length}`);
-    this.setState(initialState)
+   alert(`Game Over. Snake length is ${this.state.snakeDots.length}`);
+   this.setState(initialState);
+   this.props.handleGameOver();
   }
 
   render() {
