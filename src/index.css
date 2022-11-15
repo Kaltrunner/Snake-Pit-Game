@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+   background: #222;
+  /*background: radial-gradient(#333, #111);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font: 100%/1.5 "Helvetica Neue";
+  overflow: hidden; */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.game-area {
+  position: relative;
+  margin: 50px auto;
+  width: 700px;
+  height: 700px;
+  border: 2px solid #39FF14;
+  box-shadow: 0px 0px 10px 5px #39FF14;
+  /* background-size: 10px 10px;
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
+  /* width: 600px;
+    height: 600px;
+    background: url('http://i.stack.imgur.com/GySvQ.png'); */
+   background:  conic-gradient(from 90deg at 1px 1px,#0000 90deg,#545454 0) 
+    0 0/14px 14px;
 }
+
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  border-radius: 40%;
+  background-color: #000;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 3px 1px #fff;
+  z-index: 2;
+}
+
+.snake-food {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  border-radius: 50%;
+  background: greenyellow;
+  border: 1px solid #f000ff;
+  box-shadow: 0px 0px 10px 5px #f000ff;
+  z-index: 1;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+}
+
+home {
+  background: #222;
+}
+
+/* .snakeHome {
+  position: flex;
+  color: #39FF14;
+  font-size: 200px;
+  font-weight: bold;
+} */
+
+.snakeHome {
+  font-size: 160px;
+  color: #39FF14;
+  text-align: center;
+  border-radius: 2px solid white;
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate; */
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px greenyellow, 0 0 30px greenyellow, 0 0 40px greenyellow, 0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow;
+  }
+  to {
+    text-shadow: 0 0 20px greenyellow, 0 0 30px yellow, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.gameButtonDiv {
+  text-align: center;
+}
+
+.homeButton {
+  /* color: whitesmoke; */
+  font-weight: lighter;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 10px #39FF14;
+}
+
+.homeButton:hover {
+  cursor: pointer;
+}
+
+.gameOverText {
+  font-size: 110px;
+  color: #39FF14;
+  text-align: center;
+  border-radius: 2px solid white;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px greenyellow, 0 0 30px greenyellow, 0 0 40px greenyellow, 0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow;
+  }
+  to {
+    text-shadow: 0 0 20px greenyellow, 0 0 30px yellow, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+
