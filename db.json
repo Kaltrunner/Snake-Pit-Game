@@ -1,0 +1,132 @@
+{
+  "scores": [
+    {
+      "id": 1,
+      "initials": "CVM",
+      "score": "704"
+    },
+    {
+      "id": 2,
+      "initials": "EMR",
+      "score": "612"
+    },
+    {
+      "id": 3,
+      "initials": "AE",
+      "score": "578"
+    },
+    {
+      "id": 4,
+      "initials": "ABA",
+      "score": "548"
+    },
+    {
+      "id": 5,
+      "initials": "DZE",
+      "score": "455"
+    },
+    {
+      "id": 6,
+      "initials": "ABC",
+      "score": "548"
+    },
+    {
+      "id": 7,
+      "initials": "THC",
+      "score": "479"
+    },
+    {
+      "id": 8,
+      "initials": "LSD",
+      "score": "435"
+    },
+    {
+      "id": 9,
+      "initials": "BRB",
+      "score": "381"
+    },
+    {
+      "id": 10,
+      "initials": "PCP",
+      "score": "364"
+    },
+    {
+      "id": 11,
+      "initials": "YRN",
+      "score": "339"
+    },
+    {
+      "id": 12,
+      "initials": "WOP",
+      "score": "301"
+    },
+    {
+      "id": 13,
+      "initials": "TBA",
+      "score": "262"
+    },
+    {
+      "id": 14,
+      "initials": "JTR",
+      "score": "205"
+    },
+    {
+      "id": 15,
+      "initials": "PBR",
+      "score": "195"
+    },
+    {
+      "id": 16,
+      "initials": "MKR",
+      "score": "157"
+    },
+    {
+      "id": 17,
+      "initials": "SLR",
+      "score": "78"
+    },
+    {
+      "id": 18,
+      "initials": "KAT",
+      "score": "44"
+    },
+    {
+      "id": 19,
+      "initials": "DEF",
+      "score": "40"
+    },
+    {
+      "id": 20,
+      "initials": "OMG",
+      "score": "14"
+    },
+    {
+      "initials": "LLL",
+      "id": 21
+    },
+    {
+      "initials": "AAA",
+      "id": 22
+    },
+    {
+      "initials": "",
+      "id": 23
+    },
+    {
+      "initials": "",
+      "id": 24
+    },
+    {
+      "initials": "emr",
+      "id": 25
+    },
+    {
+      "initials": "emr",
+      "id": 26
+    },
+    {
+      "initials": "emr",
+      "id": 27
+    }
+  ]
+}

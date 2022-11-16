@@ -9,7 +9,7 @@ function Home() {
             </div>
             <div className="gameButtonDiv" >
                 <Link to="/Game">
-                    <button className="homeButton" > PLay </button>
+                    <button className="homeButton" >  𓆙  </button>
                 </Link>
             </div>
             <div className="scoreScrollDiv" >

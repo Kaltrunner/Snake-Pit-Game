@@ -5,6 +5,7 @@ export default (props) => {
     <div>
       {props.snakeDots.map((dot, i) => {
         const style = {
+          transition: '.25s',
           left: `${dot[0]}%`,
           top: `${dot[1]}%`
         }

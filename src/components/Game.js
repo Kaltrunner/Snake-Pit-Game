@@ -91,7 +91,7 @@ class Game extends React.Component  {
     let head = snake[snake.length - 1];
     snake.pop();
     snake.forEach(dot => {
-      if (head[0] === dot[0] && head[1] == dot[1]) {
+      if (head[0] === dot[0] && head[1] === dot[1]) {
         this.onGameOver();
       }
     })
@@ -100,7 +100,7 @@ class Game extends React.Component  {
   checkIfEat() {
     let head = this.state.snakeDots[this.state.snakeDots.length - 1];
     let food = this.state.food;
-    if (head[0] == food[0] && head[1] == food[1]) {
+    if (head[0] === food[0] && head[1] === food[1]) {
       this.setState({
         food: getRandomCoordinates()
       })
@@ -120,13 +120,13 @@ class Game extends React.Component  {
   increaseSpeed() {
     if (this.state.speed > 10) {
       this.setState({
-        speed: this.state.speed - 10
+        speed: this.state.speed + 10
       })
     }
   }
 
   onGameOver() {
-   alert(`Game Over. Snake length is ${this.state.snakeDots.length}`);
+   alert(`Game Over man!   Score: ${this.state.snakeDots.length}`);
    this.setState(initialState);
    this.props.handleGameOver();
   }

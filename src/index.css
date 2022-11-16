@@ -70,13 +70,13 @@
   font-size: 50px;
   padding: 10px;
   border-radius: 25px;
-  border: 1px solid lightgrey;
-  box-shadow: 0px 0px 20px 10px #39FF14;
+  border: 1px solid #1F51FF;
+  box-shadow: 0px 0px 20px 10px #1F51FF;
 }
 
 .homeButton:hover {
   cursor: pointer;
-  background-color: #39FF14;
+  background-color: #1F51FF;
   }
 
 
@@ -100,7 +100,7 @@
 
 .yourScore {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #04FFF7;
+  color: #1F51FF;
   font-size: 20px;
   text-align: center;
 }
@@ -116,13 +116,14 @@ input{
   box-sizing: border-box;
   text-align: center;
   width: 25%;
-  border: 1px solid lightgrey;
+  border: 1px solid #ff4da6;
   font-size: 50px;
   padding: 5px;
   margin: 26px;
   border-radius: 25px;
   box-shadow: 0px 0px 20px 10px #ff4da6;
   margin-left: 38%;
+  text-transform: uppercase;
 }
 
 input:hover {
@@ -149,14 +150,69 @@ input:hover {
   }
 }
 
-.scores {
-  background-color: black;
+/* .scores {
   height: 400px;
   width: 600px;
-  border: 1px solid lightgrey;
+  border: 1px solid whitesmoke;;
   margin: 0 auto;
   border-radius: 5px;
+  background-color: #000;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px 2px whitesmoke;
+} */
+
+.scoreScroll {
+  background-color: #000;
+  color: #1F51FF;
 }
+
+#scroll-container {
+  height: 400px;
+  width: 600px;
+  border: 1px solid whitesmoke;;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #000;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px 2px whitesmoke;
+}
+
+#scroll-text {
+ 
+  text-align: center;
+  background-color: #000;
+
+  /* animation properties */
+  transform: translateY(100%);
+  animation: my-animation 25s linear infinite;
+}
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(65%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateY(25%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+} 
+
+
+.scorez {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  color: #1F51FF;
+  font-size: 45px;
+  font-weight: bold;
+  background-color: #000;
+  margin: 0;
+}
+
+
 
 .playAgainButton {
   position: absolute;
@@ -168,7 +224,7 @@ input:hover {
   border-radius: 25px;
   border: 1px solid lightgrey;
   margin-top: 300px;
-  box-shadow: 0px 0px 20px 10px greenyellow;
+  box-shadow: 0px 0px 10px 5px greenyellow;
 }
 
 .playAgainButton:hover {
@@ -185,7 +241,7 @@ input:hover {
   padding: 10px;
   border-radius: 25px;
   border: 1px solid lightgrey;
-  box-shadow: 0px 0px 20px 10px greenyellow;
+  box-shadow: 0px 0px 10px 5px greenyellow;
   margin-top: 300px;
 }
 
@@ -194,3 +250,6 @@ input:hover {
   background-color: greenyellow;
 }
 
+.scoreCard {
+  color: #FF3131;
+}
