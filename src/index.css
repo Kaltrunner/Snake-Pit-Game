@@ -101,7 +101,7 @@
 .yourScore {
   font-family: 'Noto Sans JP', sans-serif;
   color: #1F51FF;
-  font-size: 20px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -124,10 +124,12 @@ input{
   box-shadow: 0px 0px 20px 10px #ff4da6;
   margin-left: 38%;
   text-transform: uppercase;
+  color:#04FFF7;
 }
 
 input:hover {
   cursor: pointer;
+  color: black;
   background-color: #ff4da6;
 }
 
@@ -184,7 +186,7 @@ input:hover {
 
   /* animation properties */
   transform: translateY(100%);
-  animation: my-animation 25s linear infinite;
+  animation: my-animation 40s linear infinite;
 }
 /* for Chrome */
 @-webkit-keyframes my-animation {

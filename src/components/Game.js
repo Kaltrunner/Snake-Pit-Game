@@ -2,27 +2,25 @@ import React from "react";
 import Snake from "./Snake";
 import Food from "./Food";
 
-
 const getRandomCoordinates = () => {
   let min = 1;
   let max = 98;
-  let x = Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  let y =  Math.floor((Math.random()*(max-min+1)+min)/2)*2;
-  return [x,y]
-}
+  let x = Math.floor((Math.random() * (max - min + 1) + min) / 2) * 2;
+  let y = Math.floor((Math.random() * (max - min + 1) + min) / 2) * 2;
+  return [x, y];
+};
 
 const initialState = {
   food: getRandomCoordinates(),
-  speed: 200,
-  direction: 'RIGHT',
+  speed: 150,
+  direction: "RIGHT",
   snakeDots: [
-    [0,0],
-    [2,0]
-  ]
-}
+    [0, 0],
+    [2, 0],
+  ],
+};
 
-class Game extends React.Component  {
-
+class Game extends React.Component {
   state = initialState;
 
   componentDidMount() {
@@ -40,44 +38,44 @@ class Game extends React.Component  {
     e = e || window.event;
     switch (e.keyCode) {
       case 38:
-        this.setState({direction: 'UP'});
+        this.setState({ direction: "UP" });
         break;
       case 40:
-        this.setState({direction: 'DOWN'});
+        this.setState({ direction: "DOWN" });
         break;
       case 37:
-        this.setState({direction: 'LEFT'});
+        this.setState({ direction: "LEFT" });
         break;
       case 39:
-        this.setState({direction: 'RIGHT'});
+        this.setState({ direction: "RIGHT" });
         break;
     }
-  }
+  };
 
   moveSnake = () => {
     let dots = [...this.state.snakeDots];
     let head = dots[dots.length - 1];
 
     switch (this.state.direction) {
-      case 'RIGHT':
+      case "RIGHT":
         head = [head[0] + 2, head[1]];
         break;
-      case 'LEFT':
+      case "LEFT":
         head = [head[0] - 2, head[1]];
         break;
-      case 'DOWN':
+      case "DOWN":
         head = [head[0], head[1] + 2];
         break;
-      case 'UP':
+      case "UP":
         head = [head[0], head[1] - 2];
         break;
     }
     dots.push(head);
     dots.shift();
     this.setState({
-      snakeDots: dots
-    })
-  }
+      snakeDots: dots,
+    });
+  };
 
   checkIfOutOfBorders() {
     let head = this.state.snakeDots[this.state.snakeDots.length - 1];
@@ -90,11 +88,11 @@ class Game extends React.Component  {
     let snake = [...this.state.snakeDots];
     let head = snake[snake.length - 1];
     snake.pop();
-    snake.forEach(dot => {
+    snake.forEach((dot) => {
       if (head[0] === dot[0] && head[1] === dot[1]) {
         this.onGameOver();
       }
-    })
+    });
   }
 
   checkIfEat() {
@@ -102,8 +100,8 @@ class Game extends React.Component  {
     let food = this.state.food;
     if (head[0] === food[0] && head[1] === food[1]) {
       this.setState({
-        food: getRandomCoordinates()
-      })
+        food: getRandomCoordinates(),
+      });
       this.enlargeSnake();
       this.increaseSpeed();
     }
@@ -111,35 +109,34 @@ class Game extends React.Component  {
 
   enlargeSnake() {
     let newSnake = [...this.state.snakeDots];
-    newSnake.unshift([])
+    newSnake.unshift([]);
     this.setState({
-      snakeDots: newSnake
-    })
+      snakeDots: newSnake,
+    });
   }
 
   increaseSpeed() {
-    if (this.state.speed > 10) {
+    if (this.state.speed > 100) {
       this.setState({
-        speed: this.state.speed + 10
-      })
+        speed: this.state.speed - 50,
+      });
     }
   }
 
   onGameOver() {
-   alert(`Game Over man!   Score: ${this.state.snakeDots.length}`);
-   this.setState(initialState);
-   this.props.handleGameOver();
+    alert(`Game Over man!   Score: ${this.state.snakeDots.length}`);
+    this.props.handleGameOver(this.state.snakeDots.length);
+    this.setState(initialState);
   }
 
   render() {
     return (
       <>
-      {/* <div class="score" > 𓆙 0 𓆙 </div> */}
-      <div className="game-area">
-        <Snake snakeDots={this.state.snakeDots}/>
-        <Food dot={this.state.food}/>
-      </div>
-      <div className="loading"></div>
+        <div className="game-area">
+          <Snake snakeDots={this.state.snakeDots} />
+          <Food dot={this.state.food} />
+        </div>
+        {/* <div className="loading"></div> */}
       </>
     );
   }
