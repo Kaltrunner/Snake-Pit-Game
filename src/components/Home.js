@@ -4,9 +4,9 @@ function Home() {
 
     function play() {
     new Audio("https://cdn.pixabay.com/download/audio/2022/08/09/audio_969f988755.mp3?filename=arcade-machines-classic-arcade-game-116836.mp3").play()
-    }
     const songTimer = setInterval(play, 84000)
     console.log(songTimer)
+    }
 
     return (
         <div>

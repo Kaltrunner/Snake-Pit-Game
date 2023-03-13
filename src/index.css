@@ -50,6 +50,7 @@
   text-align: center;
   border-radius: 2px solid white;
   animation: glow 2s ease-in-out infinite alternate;
+  cursor: default;
 }
 
 @keyframes glow {
@@ -66,16 +67,18 @@
 }
 
 .homeButton {
-  font-weight: lighter;
+  /* font-weight: lighter; */
   font-size: 50px;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 12px;
   border: 1px solid #1F51FF;
+  color: greenyellow;
   box-shadow: 0px 0px 20px 10px #1F51FF;
 }
 
 .homeButton:hover {
   cursor: pointer;
+  color:#000;
   background-color: #1F51FF;
   }
 

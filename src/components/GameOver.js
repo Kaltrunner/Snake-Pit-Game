@@ -8,7 +8,7 @@ function GameOver({ handleNewScoreArray }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/scores", {
+    fetch("http://localhost:4001/scores", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function GameOver({ handleNewScoreArray }) {
         <form onSubmit={handleSubmit} className="enterInitials">
           <h3 className="yourScore"> your score - {state.finalScore}</h3>
           <h3 className="submitText">Enter your initials</h3>
-          <br />
+          <br/>
           <input
             onkeyup=" e.target = e.target.toUpperCase()"
             minLength="3"
@@ -45,9 +45,9 @@ function GameOver({ handleNewScoreArray }) {
 
           <input type="submit" value="Submit" />
 
-          <br />
+          <br/>
         </form>
-        <div></div>
+        {/* <div></div> */}
       </div>
     </div>
   );

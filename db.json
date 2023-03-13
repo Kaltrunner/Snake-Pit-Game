@@ -81,59 +81,54 @@
       "score": "157"
     },
     {
-      "id": 17,
-      "initials": "SLR",
-      "score": "78"
+      "initials": "",
+      "score": 2,
+      "id": 17
     },
     {
-      "id": 18,
-      "initials": "KAT",
-      "score": "44"
+      "initials": "HKF",
+      "score": 5,
+      "id": 18
     },
     {
-      "id": 19,
-      "initials": "DEF",
-      "score": "40"
+      "initials": "",
+      "score": 2,
+      "id": 19
     },
     {
-      "id": 20,
-      "initials": "OMG",
-      "score": "14"
+      "initials": "HDW",
+      "score": 5,
+      "id": 20
     },
     {
-      "initials": "ERM",
-      "score": 11,
+      "initials": "",
+      "score": 2,
       "id": 21
     },
     {
-      "initials": "DDD",
-      "score": 2,
+      "initials": "",
+      "score": 4,
       "id": 22
     },
     {
-      "initials": "DDD",
-      "score": 2,
+      "initials": "MHP",
+      "score": 8,
       "id": 23
     },
     {
-      "initials": "QQQ",
-      "score": 3,
+      "initials": "EMR",
+      "score": 12,
       "id": 24
     },
     {
       "initials": "EMR",
-      "score": 97,
+      "score": 55,
       "id": 25
     },
     {
-      "initials": "RRR",
-      "score": 2,
+      "initials": "EMR",
+      "score": 12,
       "id": 26
-    },
-    {
-      "initials": "KKK",
-      "score": 4,
-      "id": 27
     }
   ]
 }
